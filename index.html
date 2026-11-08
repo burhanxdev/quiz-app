@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Game</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--    Google Fonts (Poppins)  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="quiz-container">
+      <div class="quiz-start-screen">
+        <h2 class="quiz-heading">Quiz Time!</h2>
+        <p class="quiz-description">
+          Test your knowledge with these fun questions
+        </p>
+        <button class="quiz-start-btn">Start Quiz</button>
+      </div>
+      <div class="quiz-question-screen">
+        <h2 class="quiz-question">Which planet is known as the Red Planet?</h2>
+        <div class="quiz-info">
+          <p class="quiz-question-count">
+            Question <span class="current-question"></span> of
+            <span class="total-questions"></span>
+          </p>
+          <p class="quiz-score-display">
+            Score: <span class="current-score"></span>
+          </p>
+        </div>
+
+        <div class="options-container">
+          <button class="answer-btn">Venus</button>
+          <button class="answer-btn">Mars</button>
+          <button class="answer-btn">Jupiter</button>
+          <button class="answer-btn">Saturn</button>
+        </div>
+
+        <div class="progress-container">
+          <div class="progress-bar"></div>
+        </div>
+      </div>
+      <div class="quiz-result-screen">
+        <h2 class="quiz-heading">Quiz Results!</h2>
+        <div class="quiz-result-container">
+          <p class="quiz-score">
+            You scored <span class="quiz-score-earned"></span> out
+            <span class="quiz-score-total"></span>
+          </p>
+          <p class="quiz-result-message"></p>
+        </div>
+        <button class="quiz-restart-btn">Restart Quiz</button>
+      </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
