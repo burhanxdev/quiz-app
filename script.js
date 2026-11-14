@@ -73,7 +73,9 @@ function selectAnswer(event) {
 
   if (selectedButton.dataset.correct === "true") {
     selectedButton.classList.add("correct");
-    currentScore++;
+    setTimeout(() => {
+      currentScore++;
+    },500);
     scoreSpan.textContent = currentScore;
   } else {
     selectedButton.classList.add("incorrect");
